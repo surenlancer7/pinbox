@@ -1,0 +1,28 @@
+.ck-positive-button {
+    background-color: #89a5bd;
+    color: white;
+}
+.pb-list {
+    height:44px;
+    background-color: #f5f5f5;
+    color:black;
+}
+
+.pb-list div {
+    margin-left:2%;
+    margin-top:6px;
+    font-size: 16px;
+}
+
+.left-item {
+    float:left;
+}
+.right-item {
+    float:right;
+}
+.even-item {
+    background-color: white;
+}
+.odd-item {
+    background-color: whitesmoke;
+}

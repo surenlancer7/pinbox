@@ -1,0 +1,30 @@
+<!--
+<ion-view title="Dashboard">
+    <ion-content padding="true" class="has-header">
+        <button id="page-button6" class=" button ck-positive-button  button-block" ng-click = "vm.showCamera()">Take Picture</button>
+    </ion-content>
+</ion-view>-->
+
+<ion-view title="{{vm.name}}" hide-back-button= true>
+    <ion-nav-buttons side="right">
+      <button class="button" ng-click="vm.logout()" style="color:white;background-color:#89a5bd;">
+        Logout
+      </button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        <div class = "row" ng-show="!vm.picture">
+            <div class = "col col-100" style = "font-size:39vh;text-align:center;color:#89a5bd;">
+                <i class = "icon icon ion-camera"></i>
+            </div>
+        </div>
+        <div class = "row" ng-show="!vm.picture">
+            <div class = "col col-100" style = "font-size:14px;text-align:center;">Please take a new image
+            </div>
+        </div>
+        <div class = "row">
+            <img class="image-border" ng-show="vm.picture" width = "90%" height = "40%" ng-src="data:image/png;base64, {{vm.picture}}"  style= "margin:0px auto;"/>
+        </div>
+        <button id="page-button6" class=" button ck-positive-button  button-block " ng-click="vm.showCamera()">Open Camera</button>
+        <button id="page-button7" class=" button ck-positive-button  button-block " ng-click = "vm.pushDocument()">Submit</button>
+    </ion-content>
+</ion-view>

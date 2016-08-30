@@ -1,0 +1,32 @@
+<!--
+<ion-view title="Dashboard">
+    <ion-content padding="true" class="has-header">
+        <button id="page-button6" class=" button ck-positive-button  button-block" ng-click = "vm.showCamera()">Take Picture</button>
+    </ion-content>
+</ion-view>-->
+
+<ion-view title="Offices" hide-back-button= true>
+    <ion-nav-buttons side="right">
+      <button class="button" ng-click="vm.logout()" style="color:white;background-color:#89a5bd;">
+        Logout
+      </button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+            <!--<div class = "row">
+                <div class = "col col-100">
+                    <div class="pb-list" ng-click = "vm.openOffice(office)">
+                        <div class ="col col-75 left-item">{{office.name}}</div>
+                        <div class ="col col-10 icon ion-ios-arrow-forward right-item" style = "font-size:23px; margin-top:6px;"></div>
+                    </div>
+                </div>
+            </div>-->
+            <ion-list>
+              <ion-item ng-repeat="office in offices" ng-class-even = "'even-item'" ng-class-odd="'odd-item'">
+                <div ng-click = "vm.openOffice(office)">
+                    <div class ="col col-75 left-item item-text-wrap">{{office.name}}</div>
+                    <div class ="col col-10 icon ion-ios-arrow-forward right-item" style = "font-size:23px; margin-top:6px;"></div>
+                </div>
+              </ion-item>
+            </ion-list>
+    </ion-content>
+</ion-view>

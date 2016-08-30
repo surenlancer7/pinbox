@@ -1,0 +1,12 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Git/FL2 - Scanner app/www/views/login/login.js",
+        "/Git/FL2 - Scanner app/www/views/dashboard/dashboard.js",
+        "/Git/FL2 - Scanner app/www/lib/pouchdb/src/pouchdb.js",
+        "/Git/FL2 - Scanner app/www/lib/pouchdb/src/pouchdb-browser.js",
+        "/Git/FL2 - Scanner app/www/views/dashboard/dashboardAPICallFactory.js",
+        "/Git/FL2 - Scanner app/www/common/office-service.js",
+        "/Git/FL2 - Scanner app/www/lib/pouchdb/src/index.js",
+        "/Git/FL2 - Scanner app/www/lib/pouchdb/src/extras/websql.js"
+    ]
+}
