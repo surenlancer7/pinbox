@@ -1,5 +1,16 @@
 # pinbox
 
+Dependencies
+For Android build
+
+*Android Studio 
+*Ionic
+
+For iOS
+*Mac
+*Xcode
+*Ionic
+
 Installing
 
 $ npm install -g ionic
